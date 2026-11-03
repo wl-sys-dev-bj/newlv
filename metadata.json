@@ -1,0 +1,6 @@
+{
+  "name": "Ambika Rimal · Eternal Love Journal & Sanctuary",
+  "description": "An intimate daily shared love journal, photo memories archive, and anniversary celebration sanctuary dedicated to Ambika Rimal.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

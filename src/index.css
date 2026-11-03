@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF6F0;
+    color: #2D2424;
+  }
+
+  h1, h2, h3, .font-romantic {
+    font-family: var(--font-serif);
+  }
+}
+
+@keyframes floatPetal {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(0.9);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(120vh) rotate(360deg) scale(1.1);
+    opacity: 0;
+  }
+}
+
+.animate-petal {
+  animation: floatPetal linear infinite;
+}
+
+/* Custom scrollbars for journals */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EFEB;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2CEBE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C49F89;
+}
